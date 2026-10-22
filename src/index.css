@@ -374,3 +374,12 @@ input::placeholder, textarea::placeholder { color: #7896aa; }
   .ticker { width: calc(100% - 32px); }
   .auth-body { padding: 20px 18px; }
 }
+
+/* ---------- Connect-to-like modal ---------- */
+button.heart { cursor: pointer; padding: 0; font-family: inherit; }
+button.heart:hover { color: #e0457b; }
+.modal-backdrop { position: fixed; inset: 0; z-index: 100; display: flex; align-items: center; justify-content: center; padding: 20px; background: rgba(10,40,70,.45); }
+.connect-modal { width: 100%; max-width: 380px; }
+.connect-body { padding: 24px; display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center; }
+.connect-heart { font-size: 40px; color: #e0457b; line-height: 1; }
+.connect-body .btn { margin-top: 8px; padding: 12px 28px; font-size: 16px; }

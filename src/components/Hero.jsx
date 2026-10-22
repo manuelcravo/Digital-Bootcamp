@@ -11,7 +11,6 @@ export default function Hero() {
   return (
     <section className="container hero">
       <div className="hero-copy">
-        <div className="pill"><span className="dot" />Swap season is open in Berlin</div>
         <h1>
           Swap your kicks.<br />
           <span className="fresh">Keep it fresh.</span>
