@@ -1,0 +1,14 @@
+[build]
+  command = "npm ci && npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+  # VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY are baked into the bundle at
+  # build time; set them in Netlify under Site configuration > Environment variables.
+
+# Serve index.html for any unknown path so the single-page app still loads.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
